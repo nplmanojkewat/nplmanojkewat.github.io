@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio | Manoj Kewat</title>
+    <link rel="icon" type="image/png" href="assets/logo-tab.png">
+    <link rel="stylesheet" href="./output.css">
+    <script src="https://kit.fontawesome.com/7e9295a93b.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body" class="bg-black text-white">
+
+    <!-- Nav Section -->
+    <nav id="navbar" class="relative px-6 py-4 flex justify-between items-center bg-[#0a0908]">
+
+        <a href="#navbar" id="logo-container" class="text-center flex justify-center items-center gap-2">
+            <h1 class="text-2xl md:text-2xl text-white font-semibold md:font-extrabold">CodeInSteps</h1>
+            <div class="w-3 h-3 bg-purple-300 rounded-lg"></div>
+        </a>
+
+
+        <div id="nav-menu" class="hidden md:flex gap-12 absolute left-1/2 -translate-x-1/2">
+            <a href="#hero" class="text-white">
+                <i class="fa-solid fa-house"></i>
+            </a>
+
+            <a href="#about-container" class="text-white">
+                <i class="fa-solid fa-user"></i>
+            </a>
+
+            <a href="#skill-container" class="text-white">
+                <i class="fa-solid fa-code"></i>
+            </a>
+
+            <a href="#project-container" class="text-white">
+                <i class="fa-solid fa-suitcase"></i>
+            </a>
+
+            <a href="#contact-container" class="text-white">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+        </div>
+
+
+        <div class="hidden flex items-center gap-4">
+
+            <button id="theme-toggle" class="text-white">
+                <i id="sun-icon" class="fa-solid fa-sun"></i>
+                <i id="moon-icon" class="fa-solid fa-moon hidden"></i>
+            </button>
+
+        </div>
+
+
+
+    </nav>
+
+
+
+    <!-- Hero Section -->
+    <div id="hero" class="lg:min-h-screen bg-black pt-12 text-white">
+
+        <div id="hero-container"
+            class="max-w-3xl mx-auto px-6 flex justify-start items-start flex-col gap-12 md:justify-center md:items-center ">
+
+            <div id="status"
+                class="flex gap-2 md:justify-center items-center bg-[#212529] px-4 py-1 rounded-lg border border-gray-600 shadow-md hover:shadow-lg hover:-translate-y-1 transition cursor-pointer">
+                <div class="w-2 h-2 rounded-lg bg-green-500"></div>
+                <span class="text-[12px] text-green-500 font-semibold">Available for work</span>
+            </div>
+
+
+            <!-- Details Section -->
+            <div id="hero-features"
+                class="w-full flex justify-start md:justify-center gap-4 md:gap-12 md:mt-7 md:mb-6 text-gray-500">
+
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-hand-back-fist hidden sm:flex"></i>
+                    <span>Computer Engineer</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-file-code hidden sm:flex"></i>
+                    <span>Android Developer</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-laptop hidden sm:flex"></i>
+                    <span>Web Developer</span>
+                </div>
+
+
+            </div>
+
+
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-bold md:text-center">The <span
+                    class="text-purple-400">Developer </span>for the Web &
+                App</h1>
+
+            <span class="text-gray-400 md:font-semibold md:text-center">I’m Manoj Kewat, a developer passionate about
+                building
+                modern websites and Android applications. I enjoy turning ideas into clean, functional, and
+                user-friendly digital experiences while continuously learning and improving my skills.
+            </span>
+
+
+            <!-- Buttons -->
+            <div id="buttons"
+                class="w-full flex flex-col justify-center items-center sm:flex-row md:flex-row gap-8 mt-3">
+
+                <a href="#contact-container"
+                    class="flex gap-2 justify-center items-center px-8 py-2 border border-stone-600 rounded-lg font-medium">
+                    <span class="font-sans font-light text-sm">Let's work together</span>
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+
+                <button
+                    class="flex gap-2 justify-center items-center px-8 py-2 border border-stone-600 rounded-lg font-medium">
+                    <span class="font-sans font-light text-sm">Schedule a Meeting</span>
+                    <i class="fa-solid fa-calendar"></i>
+                </button>
+            </div>
+
+
+            <div id="text-runner" class="w-full md:w-fit flex flex-col gap-4 mt-6">
+
+                <div id="mac-design" class="flex gap-2">
+                    <div class="w-3 h-3 rounded-lg bg-red-500"></div>
+                    <div class="w-3 h-3 rounded-lg bg-yellow-500"></div>
+                    <div class="w-3 h-3 rounded-lg bg-green-500"></div>
+                </div>
+
+                <div id="text-box"
+                    class="w-full flex items-center justify-start gap-2 bg-stone-950 border border-stone-700 rounded-md px-2 md:px-12 py-4">
+
+                    <span class="text-green-700">$</span>
+
+                    <span class="text-white font-light text-[12px] md:text-md font-sans md:font-md">
+                        git clone
+                    </span>
+
+                    <span id="github-text"
+                        class="text-white font-light text-[12px] md:text-md font-sans md:font-medium">
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- About Section -->
+    <div id="about-container" class="lg:min-h-screen bg-black text-white mt-24 pt-8 flex flex-col gap-14 mb-4">
+
+        <!-- About Content Section -->
+        <div id="content-container"
+            class="w-full px-6 flex flex-col gap-6 lg:flex-row lg:gap-20 lg:justify-evenly lg:items-center -pt-12">
+
+            <!-- Left Box -->
+            <div id="left-container" class="mr-6 flex justify-center items-center mb-5">
+
+                <div class="relative w-[250px] h-[350px] md:w-[350px] md:h-[450px]">
+
+                    <!-- Glow -->
+                    <div class="absolute inset-10 rounded-3xl
+                bg-violet-600/30
+                blur-[80px]">
+                    </div>
+
+
+                    <!-- Back Card -->
+                    <div class="absolute
+                top-8 left-8
+                w-full h-full
+                rounded-3xl
+                border border-blue-400/30
+                bg-blue-500/10
+                rotate-6">
+                    </div>
+
+
+                    <!-- Middle Card -->
+                    <div class="absolute
+                top-4 left-4
+                w-full h-full
+                rounded-3xl
+                border border-violet-400/30
+                bg-violet-500/10
+                -rotate-3">
+                    </div>
+
+
+                    <!-- Main Image Card -->
+                    <div class="absolute inset-0
+                overflow-hidden
+                rounded-3xl
+                border border-blue-400/50
+                bg-slate-900/50
+                shadow-2xl
+                shadow-violet-500/20">
+
+                        <img src="assets/profile.jpeg" alt="Manoj Kewat" class="h-full w-full
+                   object-cover
+                   object-center" />
+
+                        <!-- Image Overlay -->
+                        <div class="absolute inset-0
+                    bg-gradient-to-t
+                    from-[#050816]/60
+                    via-transparent
+                    to-blue-500/10">
+                        </div>
+
+                    </div>
+
+
+                    <!-- Developer Badge -->
+                    <div class="absolute
+                -bottom-5
+                -left-12
+                z-20
+                flex items-center gap-3
+                rounded-2xl
+                border border-violet-400/30
+                bg-slate-900/80
+                px-5 py-4
+                shadow-xl
+                shadow-violet-500/20
+                backdrop-blur-xl">
+
+                        <!-- Icon -->
+                        <div class="flex h-12 w-12
+                    items-center justify-center
+                    rounded-xl
+                    bg-violet-500/20
+                    text-violet-400">
+
+                            <i class="fa-solid fa-code"></i>
+
+                        </div>
+
+                        <div>
+                            <p class="font-semibold text-white">
+                                Developer
+                            </p>
+
+                            <p class="text-sm text-slate-400">
+                                Web & Android
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Right Box -->
+            <div id="right-container" class="w-full mt-6 sm:mt-0 lg:w-[50%] flex flex-col gap-6">
+
+                <div class="flex flex-col gap-2">
+                    <span
+                        class="bg-gradient-to-r from-blue-400 via-violet-400 to-purple-500 bg-clip-text text-transparent font-bold">02.
+                        ABOUT ME</span>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold">
+                        I'm
+                        <span
+                            class="bg-gradient-to-r from-blue-400 via-violet-400 to-purple-500 bg-clip-text text-transparent">
+                            Manoj Kewat
+                        </span>
+                    </h2>
+                    <span class="font-mono font-thin text-stone-400">A Developer Who Builds Digital Experiences.</span>
+                </div>
+
+                <span class="text-stone-400">I’m a developer who loves turning ideas into practical digital experiences.
+                    I’ve built Android apps like an Expense Tracker and Notes App using Kotlin and Jetpack Compose.
+                    I also enjoy creating modern, responsive websites using HTML, CSS, JavaScript, and Tailwind CSS.
+                    I’m constantly learning, experimenting with new technologies, and improving through real-world
+                    projects.
+                </span>
+
+
+                <!-- Project Completion -->
+                <div
+                    class="grid grid-cols-2 justify-center items-center md:justify-start md:items-start md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-4 gap-4 mt-3">
+
+                    <div id="card-1"
+                        class="w-full flex flex-col gap-2 items-start justify-center p-4 rounded-xl border border-zinc-600 bg-[#0D1426] hover:-translate-y-2 transition">
+
+                        <div id="icon-card" class="w-8 h-8 rounded-md bg-blue-900 flex justify-center items-center">
+                            <i class="fa-solid fa-code text-blue-500"></i>
+                        </div>
+
+                        <span class="text-lg font-bold">10+</span>
+                        <span class="font-thin text-sm">Projects Built</span>
+
+                    </div>
+
+                    <div id="card-2"
+                        class="w-full flex flex-col gap-2 items-start justify-center p-4 rounded-xl border border-zinc-600 bg-[#0D1426] hover:-translate-y-2 transition">
+
+                        <div id="icon-card" class="w-8 h-8 rounded-md bg-green-900 flex justify-center items-center">
+                            <i class="fa-solid fa-mobile text-green-500"></i>
+                        </div>
+
+                        <span class="text-lg font-bold">7+</span>
+                        <span class="font-thin text-sm">Android Apps</span>
+
+                    </div>
+
+
+                    <div id="card-3"
+                        class="w-full flex flex-col gap-2 items-start justify-center p-4 rounded-xl border border-zinc-600 bg-[#0D1426] hover:-translate-y-2 transition">
+
+                        <div id="icon-card" class="w-8 h-8 rounded-md bg-blue-900 flex justify-center items-center">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+
+                        <span class="text-lg font-bold">5+</span>
+                        <span class="font-thin text-sm">Websites</span>
+
+                    </div>
+
+
+                    <div id="card-4"
+                        class="w-full flex flex-col gap-2 items-start justify-center p-4 rounded-xl border border-zinc-600 bg-[#0D1426] hover:-translate-y-2 transition">
+
+                        <div id="icon-card" class="w-8 h-8 rounded-md bg-blue-900 flex justify-center items-center">
+                            <i class="fa-solid fa-code text-blue-500"></i>
+                        </div>
+
+                        <span class="text-lg font-bold">Always</span>
+                        <span class="font-thin text-sm">Learning</span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="w-full h-[2px] bg-[#0D1426] mt-6"></div>
+
+                <div id="featured-header" class="flex gap-2 justify-start items-center">
+                    <h2 class="font-semibold">Featured Projects</h2>
+                    <i class="fa-solid fa-arrow-down-long rotate-[220deg] text-violet-400"></i>
+                </div>
+
+
+                <div id="featured-card-container"
+                    class="grid grid-cols-1 justify-center items-center md:justify-start md:items-start md:grid-cols-1 lg:grid-cols-2 gap-6 md:gap-16 mt-3">
+
+                    <!-- Card 1 -->
+                    <div id="featured-card1"
+                        class="lg:w-full flex gap-4 items-start justify-center p-4 rounded-xl border border-zinc-600 bg-[#0D1426] hover:-translate-y-2 transition">
+
+                        <div id="icon-card" class="w-12 h-10 rounded-md bg-green-900 flex justify-center items-center">
+                            <i class="fa-solid fa-file-invoice text-green-500"></i>
+                        </div>
+
+                        <div class="flex flex-col gap-2">
+                            <h1 class="font-semibold">Expense Tracker</h1>
+                            <span class="font-light text-[14px]">Track daily income and expenses with a simple and clean
+                                UI.</span>
+
+                            <div id="technologies">
+                                <span
+                                    class="w-fit bg-slate-700 px-4 py-1 rounded-xl font-bold text-[12px]">Kotlin</span>
+                                <span
+                                    class="w-fit bg-slate-700 px-4 py-1 rounded-xl font-bold text-[12px]">Compose</span>
+                                <span class="w-fit bg-slate-700 px-4 py-1 rounded-xl font-bold text-[12px]">Room</span>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Card 2 -->
+                    <div id="featured-card2"
+                        class="lg:w-[100%] flex gap-4 items-start justify-center p-4 rounded-xl border border-zinc-600 bg-[#0D1426] hover:-translate-y-2 transition">
+
+                        <div id="icon-card" class="w-12 h-10 rounded-md bg-blue-900 flex justify-center items-center">
+                            <i class="fa-brands fa-etsy text-blue-500"></i>
+                        </div>
+
+                        <div class="flex flex-col gap-2">
+                            <h1 class="font-semibold">E-Commerce</h1>
+                            <span class="font-light text-[14px]">Track daily income and expenses with a simple and clean
+                                UI.</span>
+
+                            <div id="technologies">
+                                <span class="w-fit bg-slate-700 px-4 py-1 rounded-xl font-bold text-[12px]">Java</span>
+                                <span class="w-fit bg-slate-700 px-4 py-1 rounded-xl font-bold text-[12px]">XML</span>
+                                <span
+                                    class="w-fit bg-slate-700 px-4 py-1 rounded-xl font-bold text-[12px]">Firebase</span>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Skills Section -->
+    <div id="skill-container" class="mt-24 lg:-mt-50 mb-12">
+
+        <div id="content-container"
+            class="w-full px-6 flex flex-col gap-6 md:flex-col lg:flex-row lg:justify-evenly md:items-center -pt-12">
+
+            <!-- Left Description Container -->
+            <div id="left-box" class="w-full lg:w-[30%] flex flex-col gap-2 md:gap-4">
+                <span
+                    class="bg-gradient-to-r from-blue-400 via-violet-400 to-purple-500 bg-clip-text text-transparent font-bold">
+                    03.
+                    SKILLS</span>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold">
+                    My
+                    <span
+                        class="bg-gradient-to-r from-blue-400 via-violet-400 to-purple-500 bg-clip-text text-transparent">
+                        Skills
+                    </span>
+                </h2>
+                <span class="text-stone-400">I’m a developer who loves turning ideas into practical digital experiences.
+                    Technologies and tools I work with to build modern and user-friendly applications and websites.
+                </span>
+            </div>
+
+
+            <!-- Right Skills Container -->
+            <div id="right-box" class="w-full lg:w-[52%] mt-6 grid grid-cols-1 lg:grid-cols-2 gap-4">
+
+                <!-- Languages -->
+                <div id="langauges-card"
+                    class="w-full bg-[#0D1426] border border-zinc-600 py-6 px-2 flex flex-col gap-2 rounded-lg hover:-translate-y-2 transition">
+                    <!-- Icon -->
+                    <div class="flex items-center justify-start gap-2 pb-4">
+                        <div class="flex h-12 w-12
+                    items-center justify-center
+                    rounded-xl
+                    bg-violet-500/20
+                    text-violet-400">
+
+                            <i class="fa-solid fa-code"></i>
+
+                        </div>
+                        <span class="font-semibold">Languages</span>
+                    </div>
+
+                    <div id="technologies" class="w-full pr-6 grid grid-cols-3 md:flex md:flex-wrap gap-2">
+                        <span class="w-fit bg-slate-700 px-4 py-1 rounded-xl font-bold text-[12px]">Java</span>
+                        <span class="w-fit bg-slate-700 px-4 py-1 rounded-xl font-bold text-[12px]">Kotlin</span>
+                        <span class="w-fit bg-slate-700 px-4 py-1 rounded-xl font-bold text-[12px]">HTML</span>
+                        <span class="w-fit bg-slate-700 px-4 py-1 rounded-xl font-bold text-[12px]">CSS</span>
+                        <span class="w-fit bg-slate-700 px-4 py-1 rounded-xl font-bold text-[12px]">JavaScript</span>
+                    </div>
+
+
+                </div>
+
+                <!-- Framework & Technologies -->
+                <div id="framework-card"
+                    class="w-full bg-[#0D1426] border border-zinc-600 py-6 px-2 flex flex-col gap-2 rounded-lg hover:-translate-y-2 transition">
+                    <!-- Icon -->
+                    <div class="flex items-center justify-start gap-2 pb-4">
+                        <div class="flex h-12 w-12
+                    items-center justify-center
+                    rounded-xl
+                    bg-green-900">
+
+                            <i class="fa-solid fa-layer-group text-green-400"></i>
+
+                        </div>
+                        <span class="font-semibold">Framework & Technologies</span>
+                    </div>
+
+                    <div id="technologies"
+                        class="w-full pr-6 grid grid-cols-2 md:grid-cols-3 md:flex md:flex-wrap gap-2">
+                        <span class="w-fit bg-slate-700 px-4 py-1 rounded-xl font-bold text-[12px]">Android</span>
+                        <span class="w-fit bg-slate-700 px-4 py-1 rounded-xl font-bold text-[12px]">Room DB</span>
+                        <span class="w-fit bg-slate-700 px-4 py-1 rounded-xl font-bold text-[12px]">Firebase</span>
+                        <span class="w-fit bg-slate-700 px-4 py-1 rounded-xl font-bold text-[12px]">Jetpack
+                            Compose</span>
+                        <span class="w-fit bg-slate-700 px-4 py-1 rounded-xl font-bold text-[12px]">Tailwind CSS</span>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- Tools -->
+                <div id="tools-card"
+                    class="w-full bg-[#0D1426] border border-zinc-600 py-6 px-2 flex flex-col gap-2 rounded-lg hover:-translate-y-2 transition">
+                    <!-- Icon -->
+                    <div class="flex items-center justify-start gap-2 pb-4">
+                        <div class="flex h-12 w-12
+                    items-center justify-center
+                    rounded-xl
+                    bg-violet-500/20
+                    text-violet-400">
+
+                            <i class="fa-solid fa-wrench"></i>
+
+                        </div>
+                        <span class="font-semibold">Tools</span>
+                    </div>
+
+                    <div id="technologies"
+                        class="w-full pr-6 grid grid-cols-2 md:grid-cols-3 md:flex md:flex-wrap gap-2">
+                        <span class="w-fit bg-slate-700 px-4 py-1 rounded-xl font-bold text-[12px]">GitHub</span>
+                        <span class="w-fit bg-slate-700 px-4 py-1 rounded-xl font-bold text-[12px]">Android
+                            Studio</span>
+                        <span class="w-fit bg-slate-700 px-4 py-1 rounded-xl font-bold text-[12px]">IntelliJ IDEA</span>
+                        <span class="w-fit bg-slate-700 px-4 py-1 rounded-xl font-bold text-[12px]">VS Code</span>
+                        <span class="w-fit bg-slate-700 px-4 py-1 rounded-xl font-bold text-[12px]">Figma</span>
+                    </div>
+
+
+                </div>
+
+                <!-- Other Technologies -->
+                <div id="otther-card"
+                    class="w-full bg-[#0D1426] border border-zinc-600 py-6 px-2 flex flex-col gap-2 rounded-lg hover:-translate-y-2 transition">
+                    <!-- Icon -->
+                    <div class="flex items-center justify-start gap-2 pb-4">
+                        <div class="flex h-12 w-12
+                    items-center justify-center
+                    rounded-xl
+                    bg-gray-700">
+
+                            <i class="fa-solid fa-cloud text-white"></i>
+
+                        </div>
+                        <span class="font-semibold">Other</span>
+                    </div>
+
+                    <div id="technologies"
+                        class="w-full pr-6 grid grid-cols-2 md:grid-cols-3 md:flex md:flex-wrap gap-2">
+                        <span class="w-fit bg-slate-700 px-4 py-1 rounded-xl font-bold text-[12px]">Tally</span>
+                        <span class="w-fit bg-slate-700 px-4 py-1 rounded-xl font-bold text-[12px]">Microsoft
+                            Office</span>
+                        <span class="w-fit bg-slate-700 px-4 py-1 rounded-xl font-bold text-[12px]">Problem
+                            Solving</span>
+                        <span class="w-fit bg-slate-700 px-4 py-1 rounded-xl font-bold text-[12px]">Communication</span>
+                        <span class="w-fit bg-slate-700 px-4 py-1 rounded-xl font-bold text-[12px]">Documentation</span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- Projects Section -->
+    <div id="project-container" class="min-h-fit lg:-mt-50 mb-32">
+
+        <div id="project-content" class="w-full px-6 flex flex-col lg:flex-row lg:justify-evenly lg:items-center gap-6">
+
+            <!-- Left Description Container -->
+            <div id="top-box" class="w-full lg:w-[30%] flex flex-col gap-2 md:gap-4">
+                <span
+                    class="bg-gradient-to-r from-blue-400 via-violet-400 to-purple-500 bg-clip-text text-transparent font-bold">
+                    04.
+                    PROJECTS</span>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold">
+                    My
+                    <span
+                        class="bg-gradient-to-r from-blue-400 via-violet-400 to-purple-500 bg-clip-text text-transparent">
+                        Projects
+                    </span>
+                </h2>
+                <span class="text-stone-400">Here are some of the projects I've built using
+                    different technologies. Each
+                    one helped me learn, solve problems and improve my skills.
+                </span>
+
+                <button
+                    class="w-fit flex gap-2 justify-center items-center px-8 py-2 mt-4 border border-stone-600 rounded-lg font-medium">
+                    <span class="font-sans font-light text-sm">View More Projects</span>
+                    <i class="fa-brands fa-github"></i>
+                </button>
+            </div>
+
+            <div id="bottom-box"
+                class="w-full lg:w-[52%] grid md:justify-center md:items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4">
+
+                <div id="project-card1"
+                    class="max-w-full lg:max-w-[20em] flex flex-col gap-4 bg-[#0D1426] border-[1px] border-zinc-600 rounded-lg px-4 py-6 hover:-translate-y-2 transition">
+                    <!-- Image Container -->
+                    <div id="image-container" class="flex justify-center items-center">
+                        <img class="w-[250px] h-[180px] rounded-t-lg" src="assets/expense.png" alt="">
+                    </div>
+
+                    <span class="font-semibold">Expense Tracker</span>
+                    <span class="font-light text-[14px] text-zinc-400">Track daily income and expenses with
+                        category-wise
+                        analysis.</span>
+
+                    <div id="technologies" class="grid grid-cols-3 lg:grid-cols-3 justify-center items-center gap-3">
+                        <span class="w-fit bg-slate-600 px-2 py-1 rounded-xl font-bold text-[12px]">Kotlin</span>
+                        <span class="w-fit bg-slate-600 px-2 py-1 rounded-xl font-bold text-[12px]">Compose</span>
+                        <span class="w-fit bg-slate-600 px-2 py-1 rounded-xl font-bold text-[12px]">Room</span>
+                    </div>
+
+                    <div class="flex">
+
+                        <div class="flex items-center gap-2">
+                            <i class="fa-brands fa-github"></i>
+                            <a href="https://github.com/nplmanojkewat/Expense-Tracker" target="_blank"
+                                rel="noopener noreferrer" class="text-[14px] font-semibold text-blue-800">GitHub</a>
+                            <i class="fa-solid fa-link text-blue-800"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- E-Commerce App -->
+                <div id="project-card2"
+                    class="max-w-full lg:max-w-[20em] flex flex-col gap-4 bg-[#0D1426] border-[1px] border-zinc-600 rounded-lg px-4 py-6 hover:-translate-y-2 transition">
+                    <!-- Image Container -->
+                    <div id="image-container" class="flex justify-center items-center">
+                        <img class="w-[250px] h-[180px] rounded-t-lg" src="assets/ecommerce.png" alt="">
+                    </div>
+
+                    <span class="font-semibold">E-Commerce</span>
+                    <span class="font-light text-[14px] text-zinc-400">Basic e-commerce system with user authentication,
+                        cart, orders, add product and delivery management.</span>
+
+                    <div id="technologies" class="grid grid-cols-3 lg:grid-cols-3 justify-center items-center gap-3">
+                        <span class="w-fit bg-slate-600 px-2 py-1 rounded-xl font-bold text-[12px]">Java</span>
+                        <span class="w-fit bg-slate-600 px-2 py-1 rounded-xl font-bold text-[12px]">XML</span>
+                        <span class="w-fit bg-slate-600 px-2 py-1 rounded-xl font-bold text-[12px]">Firebase</span>
+                    </div>
+
+                    <div class="flex">
+
+                        <div class="flex items-center gap-2">
+                            <i class="fa-brands fa-github"></i>
+                            <a href="#" target="_blank" rel="noopener noreferrer"
+                                class="text-[14px] font-semibold text-blue-800">GitHub</a>
+                            <i class="fa-solid fa-link text-blue-800"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Messaging App -->
+                <div id="project-card3"
+                    class="max-w-full lg:max-w-[20em] flex flex-col gap-4 bg-[#0D1426] border-[1px] border-zinc-600 rounded-lg px-4 py-6 hover:-translate-y-2 transition">
+                    <!-- Image Container -->
+                    <div id="image-container" class="flex justify-center items-center">
+                        <img class="w-[250px] h-[180px] rounded-t-lg" src="assets/chat-app.webp" alt="">
+                    </div>
+
+                    <span class="font-semibold">Basic Messaging App</span>
+                    <span class="font-light text-[14px] text-zinc-400">Messaging app with Firebase, message sending and
+                        receiving.
+                    </span>
+
+                    <div id="technologies" class="grid grid-cols-2 lg:grid-cols-3 justify-center items-center gap-3">
+                        <span class="w-fit bg-slate-600 px-2 py-1 rounded-xl font-bold text-[12px]">Kotlin</span>
+                        <span class="w-fit bg-slate-600 px-2 py-1 rounded-xl font-bold text-[12px]">Compose</span>
+                        <span class="w-fit bg-slate-600 px-2 py-1 rounded-xl font-bold text-[12px]">Firebase</span>
+                    </div>
+
+                    <div class="flex">
+
+                        <div class="flex items-center gap-2">
+                            <i class="fa-brands fa-github"></i>
+                            <a href="https://github.com/nplmanojkewat/Chatting-App" target="_blank"
+                                rel="noopener noreferrer" class="text-[14px] font-semibold text-blue-800">GitHub</a>
+                            <i class="fa-solid fa-link text-blue-800"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- What I Do -->
+    <div id="focus-container" class="min-h-fit mb-24">
+
+        <div id="project-content" class="w-full px-6 flex flex-col lg:flex-row lg:justify-evenly lg:items-center gap-6">
+
+            <!-- Left Description Container -->
+            <div id="focus-top-box" class="w-full lg:w-[30%] flex flex-col gap-2 md:gap-4">
+                <span
+                    class="bg-gradient-to-r from-blue-400 via-violet-400 to-purple-500 bg-clip-text text-transparent font-bold">
+                    05.
+                    WHAT I DO</span>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold">
+                    My
+                    <span
+                        class="bg-gradient-to-r from-blue-400 via-violet-400 to-purple-500 bg-clip-text text-transparent">
+                        Focus
+                    </span>
+                </h2>
+                <span class="text-stone-400">Here are some of the projects I've built using
+                    different technologies. Each
+                    one helped me learn, solve problems and improve my skills.
+                </span>
+
+            </div>
+
+
+            <!-- Right Box Container -->
+            <div
+                class="w-full lg:w-[52%] grid grid-cols-1 justify-center items-center md:justify-start md:items-start md:grid-cols-2 lg:grid-cols-2 gap-4 mt-3">
+
+                <div id="card-1"
+                    class="w-full flex flex-col gap-2 items-start justify-center p-4 rounded-xl border border-zinc-600 bg-[#06080f] hover:-translate-y-2 transition">
+
+                    <div id="icon-card" class="w-8 h-8 rounded-md bg-green-900 flex justify-center items-center">
+                        <i class="fa-solid fa-mobile text-green-500"></i>
+                    </div>
+
+                    <span class="text-md font-bold">Android Development</span>
+                    <span class="font-thin text-[12px] text-zinc-300">Creating Android apps using Kotlin and Jetpack
+                        Compose for smooth user experiences.</span>
+
+                </div>
+
+                <div id="card-2"
+                    class="w-full flex flex-col gap-2 items-start justify-center p-4 rounded-xl border border-zinc-600 bg-[#06080f] hover:-translate-y-2 transition">
+
+
+                    <div id="icon-card" class="w-8 h-8 rounded-md bg-blue-900 flex justify-center items-center">
+                        <i class="fa-solid fa-code text-blue-500"></i>
+                    </div>
+
+                    <span class="text-md font-bold">Web Development</span>
+                    <span class="font-thin text-[12px] text-zinc-300">Building responsive and modern websites with clean
+                        and user-friendly interfaces.</span>
+
+                </div>
+
+
+                <div id="card-3"
+                    class="w-full flex flex-col gap-2 items-start justify-center p-4 rounded-xl border border-zinc-600 bg-[#06080f] hover:-translate-y-2 transition">
+
+                    <div id="icon-card" class="w-8 h-8 rounded-md bg-blue-900 flex justify-center items-center">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+
+                    <span class="text-md font-bold">UI Development</span>
+                    <span class="font-thin text-[12px] text-zinc-300">Designing intuitive and visually appealing
+                        interfaces focused on usability.</span>
+
+                </div>
+
+
+                <div id="card-4"
+                    class="w-full flex flex-col gap-2 items-start justify-center p-4 rounded-xl border border-zinc-600 bg-[#06080f] hover:-translate-y-2 transition">
+
+                    <div id="icon-card" class="w-8 h-8 rounded-md bg-blue-900 flex justify-center items-center">
+                        <i class="fa-solid fa-code text-blue-500"></i>
+                    </div>
+
+                    <span class="text-md font-bold">Problem Solving</span>
+                    <span class="font-thin text-[12px] text-zinc-300">Breaking problems into smaller pieces and turning
+                        them into practical solutions.</span>
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Contact Section -->
+    <div id="contact-container" class="min-h-fit mb-12">
+
+        <div id="contact-content" class="w-full p-6 flex flex-col lg:flex-row lg:justify-evenly gap-6">
+
+            <div id="contact-left-box" class="w-full lg:w-[30%] flex flex-col gap-2 md:gap-4">
+                <span
+                    class="bg-gradient-to-r from-blue-400 via-violet-400 to-purple-500 bg-clip-text text-transparent font-bold">
+                    06.
+                    CONTACT</span>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold">
+                    Let's Build
+                    <span
+                        class="bg-gradient-to-r from-blue-400 via-violet-400 to-purple-500 bg-clip-text text-transparent">
+                        Something Together
+                    </span>
+                </h2>
+                <span class="text-stone-400">Have an idea, project, or opportunity you'd like to discuss?
+                    Feel free to reach out. I'm always open to connecting, learning and building something useful
+                    together.
+                </span>
+
+                <div id="link-container" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 items-center mt-2">
+
+                    <a href="https://github.com/nplmanojkewat" target="_blank" rel="noopener noreferrer" id="github"
+                        class="flex flex-col gap-2 justify-between items-center border border-zinc-600 px-4 py-4 rounded-lg hover:-translate-y-2 transition">
+                        <i class="fa-brands fa-github"></i>
+                        <span class="font-extralight text-[12px]">GitHub</span>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/manoj-kewat-58ab36332/" target="_blank"
+                        rel="noopener noreferrer" id="github"
+                        class="flex flex-col gap-2 justify-between items-center border border-zinc-600 px-4 py-4 rounded-lg hover:-translate-y-2 transition">
+                        <i class="fa-brands fa-square-linkedin"></i>
+                        <span class="font-extralight text-[12px]">LinkedIn</span>
+                    </a>
+
+
+                    <a href="https://www.facebook.com/manoj.kewat.885004" target="_blank" rel="noopener noreferrer"
+                        id="github"
+                        class="flex flex-col gap-2 justify-between items-center border border-zinc-600 px-4 py-4 rounded-lg hover:-translate-y-2 transition">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <span class="font-extralight text-[12px]">Facebook</span>
+                    </a>
+
+                    <a href="https://www.tiktok.com/@nplmrmanoj" target="_blank" rel="noopener noreferrer" id="github"
+                        class="flex flex-col gap-2 justify-between items-center border border-zinc-600 px-4 py-4 rounded-lg hover:-translate-y-2 transition">
+                        <i class="fa-brands fa-tiktok"></i>
+                        <span class="font-extralight text-[12px]">TikTok</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div id="right-box" class="w-full flex lg:w-[52%]">
+
+                <form id="formSubmission" action="https://formspree.io/f/xljdnyep" method="POST"
+                    class="w-full flex flex-col gap-4 justify-center border border-zinc-600 rounded-lg px-6 py-6">
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 lg:flex-row gap-2">
+
+                        <input type="text" name="username" id="username" placeholder="Full Name" required
+                            class="p-2 bg-black border border-zinc-600 rounded-md">
+
+                        <input type="email" name="email" id="email" placeholder="Email Address" required
+                            class="p-2 rounded-md bg-black border border-zinc-600">
+                    </div>
+
+                    <input type="text" name="subject" id="subject" placeholder="Subject"
+                        class="p-2 rounded-md bg-black border border-zinc-600">
+
+                    <textarea id="feedback" name="feedback" rows="2" cols="40" placeholder="Type your message here..."
+                        required class="p-2 rounded-md bg-black border border-zinc-600"></textarea>
+
+                    <button type="submit"
+                        class="bg-gradient-to-r from-blue-400 via-violet-400 to-purple-500 text-transparent border border-zinc-600 rounded-lg py-2">
+                        <i class="fa-solid fa-paper-plane text-white text-sm"></i>
+                        <span class="text-white text-sm">Send Message</span>
+                    </button>
+
+                    <p id="formMessage" class="text-center text-sm hidden"></p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Footer Section -->
+    <div id="footer"
+        class="w-full min-h-14 flex gap-1 justify-between items-center px-6 lg:px-28 border-t border-slate-700">
+
+        <h1 class="bg-gradient-to-r from-blue-400 via-violet-400 to-purple-500 bg-clip-text text-transparent font-bold">
+            Manoj.in</h1>
+
+        <div class="flex gap-2 lg:gap-6 justify-center items-center">
+            <span class="font-sm text-[12px]">Building</span>
+            <div class="w-2 h-2 bg-white rounded-full"></div>
+            <span class="font-sm text-[12px]">Learning</span>
+            <div class="w-2 h-2 bg-white rounded-full"></div>
+            <span class="font-sm text-[12px]">Creating</span>
+        </div>
+
+        <span class="hidden lg:flex font-medium text-[12px]">© 2026 Manoj Kewat</span>
+
+    </div>
+
+
+
+    <!-- Success Popup -->
+    <div id="successPopup"
+        class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 backdrop-blur-sm px-4">
+
+        <div id="successBox" class="relative w-full max-w-sm rounded-2xl border border-violet-400/30
+               bg-zinc-950/90 p-8 text-center shadow-2xl shadow-violet-500/20
+               opacity-0 scale-90 transition-all duration-300">
+
+            <!-- Glow -->
+            <div class="absolute inset-0 -z-10 rounded-2xl bg-violet-500/10 blur-2xl"></div>
+
+            <!-- Success Icon -->
+            <div class="mx-auto mb-5 flex h-16 w-16 items-center justify-center
+                    rounded-full border border-violet-400/40
+                    bg-gradient-to-br from-violet-500/20 to-purple-500/10">
+
+                <i class="fa-solid fa-check text-2xl text-violet-300"></i>
+            </div>
+
+            <h2 class="text-xl font-semibold text-white">
+                Message Sent ✓
+            </h2>
+
+            <p class="mt-2 text-sm text-zinc-400">
+                Thanks for reaching out. I'll get back to you soon.
+            </p>
+
+            <button id="closePopup" class="mt-6 rounded-lg border border-zinc-700
+                   bg-white/5 px-6 py-2 text-sm text-white
+                   transition hover:border-violet-400/50
+                   hover:bg-violet-500/10">
+                Close
+            </button>
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
